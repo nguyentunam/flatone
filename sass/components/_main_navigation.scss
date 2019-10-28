@@ -1,0 +1,119 @@
+
+#top-nav {
+    &.fixed {
+        z-index: 98;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        .header-social-buttons {
+            display: none;
+        }
+    }
+}
+
+
+.main-navigation {
+    display: block;
+    font-size: 14px;
+    z-index: 100;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .container>.row {
+        position: relative;
+    }
+
+    ul.menu {
+        display: block;
+        z-index: 100;
+        $delay2: 100ms;
+        $delay1: 200ms;
+        li.menu-item {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            clear: both;
+            z-index: 100;
+            a {
+                padding: 15px 10px;
+                color: #666;
+                text-decoration: none;
+                display: block;
+                z-index: 100;
+            }
+            &.current_page_item,
+            &.current_page_parent {
+                & > a {
+                    color: #393939;
+                }
+            }
+            ul.sub-menu {
+                // top: ;
+                display: flex;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility $delay1 linear $delay1, opacity $delay1;
+                position: absolute;
+                z-index: 100;
+                left: 0;
+                right: 0;
+                font-size: 13px;
+                padding: 10px;
+                overflow: hidden;
+                background-color: #f5f5f5;
+                // background-color: red;
+                clear: both;
+
+                li {
+                    display: inline-block;
+                    width: 25%;
+                    a {
+                        display: block;
+                        overflow: hidden;
+                        position: relative;
+                        padding: 6px;
+
+                        &:before {
+                            content: "\f138";    
+                            display: inline-block;
+                            font: normal normal normal 14px/1 FontAwesome;
+                            font-size: inherit;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;
+                            padding: 0 5px 0 2px;
+                        }
+                        &:hover {
+                            color: white;
+                            background-color: green;
+                        }
+                    }
+                }
+            }
+            &.current-menu-item {
+                a {
+                    color: back;
+                    transition: background-color $delay1 ;
+                }
+            }
+            &:hover {
+                ul.sub-menu {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: visibility $delay2 linear $delay2, opacity $delay2;
+                }
+                > a {
+                    color: back;
+                    background-color: #e8e8e8;
+                    transition: background-color $delay2 ;
+                }
+            }
+        }
+    }
+}
+

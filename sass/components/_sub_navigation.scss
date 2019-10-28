@@ -1,0 +1,86 @@
+.sub-navigation {
+    background-color: green;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75) inset;
+
+    color: white;
+    display: block;
+    font-size: 13px;
+    z-index: 99;
+    position: relative;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .container>.row {
+        position: relative;
+    }
+
+
+    ul.menu {
+        display: block;
+        z-index: 99;
+        position: relative;
+        li.menu-item {
+            display: none;
+            margin: 0;
+            padding: 0;
+            clear: both;
+            z-index: 99;
+            position: relative;
+            a {
+                padding: 10px 10px;
+                color: white;
+                text-decoration: none;
+                display: block;
+            }
+            &.current_page_item.menu-item-has-children,
+            &.current_page_parent {
+                & > a {
+                    color: white;
+                    font-weight: bold;
+                    padding-right: 20px;
+                    background-color: transparent;
+                }
+            }
+            &.current_page_item,
+            &.current_page_parent {
+                display: flex;
+
+                ul.sub-menu {
+                    // top: ;
+                    padding: 0;
+                    display: inline-block;
+                    font-size: 13px;
+                    overflow: hidden;
+                    flex: 1;
+                    display: flex;
+                    li {
+                        display: block;
+                        // display: inline-block;
+                        a {
+                            display: block;
+                            overflow: hidden;
+                            position: relative;
+                            padding: 11px;
+                        }
+                        &.current-menu-item {
+                            & > a {
+                                color: white;
+                                background-color: #393a3f;
+                            }
+                        }
+                    }
+                }
+                &.current-menu-item {
+                    a {
+                        color: back;
+                    }
+                }
+            }
+        }
+    }
+}
