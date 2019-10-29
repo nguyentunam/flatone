@@ -54,6 +54,11 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #393a3f;
+  line-height: 20px;
   /* 2 */
 }
 
@@ -95,7 +100,6 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -138,7 +142,6 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -191,7 +194,6 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -385,7 +387,6 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -421,7 +422,6 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -435,7 +435,6 @@ code,
 kbd,
 tt,
 var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -794,7 +793,7 @@ a:active {
 
 .post,
 .page {
-  margin: 0 0 1.5em;
+  margin: 0;
 }
 
 .updated:not(.published) {
@@ -5181,6 +5180,102 @@ object {
   width: 35px;
   overflow: hidden;
   display: inline-block;
+}
+.header-social-buttons .btn-social:hover {
+  color: white;
+  background-color: #048031;
+}
+
+.site-footer {
+  background-color: #dedede;
+  padding-bottom: 50px;
+}
+.site-footer .footer-header {
+  background-color: #048031;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.site-footer .footer-header .icon-global:before {
+  content: "";
+  background: url("./images/footer-header.png") no-repeat center center;
+  width: 130px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.site-footer .footer-header h3 {
+  margin: 4px 0 -4px 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 17px;
+  color: white;
+}
+.site-footer .panel-phone {
+  border-top: 2px solid #048031;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+.site-footer .icon-cc:before {
+  content: "";
+  background: url(./images/cc.png) no-repeat center center;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  display: block;
+  background-size: 200px;
+}
+.site-footer .icon-verified:before {
+  content: "";
+  background: url(./images/verified.png) no-repeat center center;
+  width: 130px;
+  height: 60px;
+  display: block;
+  float: right;
+  background-size: 100px;
+}
+.site-footer .footer-content h3 {
+  font-size: 15px;
+  color: #393a3f;
+}
+.site-footer .footer-content .info {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.site-footer .footer-content .info .fa {
+  margin-right: 15px;
+  color: #ca0411;
+  width: 10px;
+  padding: 0 3px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.site-footer .footer-content .info .fa:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+.site-footer .footer-content .info a,
+.site-footer .footer-content .info .value {
+  color: #048031;
+  text-decoration: none;
+}
+.site-footer .footer-content .info a {
+  font-weight: bold;
+}
+.site-footer .footer-content .phone-number {
+  border-top: dotted 1px gray;
+  padding: 10px;
+}
+.site-footer .footer-content .phone-number .icon-zalo {
+  background: url("./images/zalo.png") no-repeat center center;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

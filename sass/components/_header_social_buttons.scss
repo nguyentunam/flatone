@@ -9,5 +9,9 @@
         width: 35px;
         overflow: hidden;
         display: inline-block;
+        &:hover {
+            color: white;
+            background-color: $green;
+        }
     }
 }

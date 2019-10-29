@@ -1,0 +1,96 @@
+.site-footer {
+    background-color: #dedede;
+    padding-bottom: 50px;
+
+    .footer-header {
+        background-color: $green;
+        color: white;
+        padding: 0;
+        margin: 0;
+
+        .icon-global:before {
+            content: "";
+            background: url('./images/footer-header.png')  no-repeat center center ; 
+            width: 130px;
+            height: 60px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        h3 {
+            margin: 4px 0 -4px 0;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 60px;
+            font-size: 17px;
+            color:white;
+        }
+    }
+    .panel-phone  {
+        border-top: 2px solid $green;
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+    .icon-cc:before {
+        content: "";
+        background: url(./images/cc.png) no-repeat center center;
+        width: 200px;
+        height: 100px;
+        display: inline-block;
+        display: block;
+        background-size: 200px;
+    }
+    .icon-verified:before {
+        content: "";
+        background: url(./images/verified.png) no-repeat center center;
+        width: 130px;
+        height: 60px;
+        display: block;
+        float: right;
+        background-size: 100px;
+
+    }
+    .footer-content {
+        h3 {
+            font-size: 15px;
+            color:#393a3f
+        }
+        .info {
+            font-size: 14px;
+            padding-bottom: 5px;
+            .fa {
+                margin-right: 15px;
+                color: #ca0411;
+                width: 10px;
+                padding: 0 3px;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: center;
+                &:before {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            a,
+            .value {
+                color: $green;
+                text-decoration: none;
+            }
+            a {
+                font-weight: bold;
+            }
+        }
+        .phone-number {
+            border-top: dotted 1px gray;
+            padding: 10px;
+            .icon-zalo {
+                background: url('./images/zalo.png')  no-repeat center center ; 
+                background-size: 20px;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
+@import "./varaiables";
+
 
 
 /* Document
@@ -12,6 +14,12 @@ html {
     line-height: 1.15;
     /* 1 */
     -webkit-text-size-adjust: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #393a3f;
+    line-height: 20px;
     /* 2 */
 }
 
@@ -59,7 +67,6 @@ hr {
  */
 
 pre {
-    font-family: monospace, monospace;
     /* 1 */
     font-size: 1em;
     /* 2 */
@@ -107,7 +114,6 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace;
     /* 1 */
     font-size: 1em;
     /* 2 */
@@ -166,7 +172,6 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: inherit;
     /* 1 */
     font-size: 100%;
     /* 1 */
@@ -380,7 +385,6 @@ select,
 optgroup,
 textarea {
     color: #404040;
-    font-family: sans-serif;
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -416,7 +420,6 @@ address {
 
 pre {
     background: #eee;
-    font-family: "Courier 10 Pitch", Courier, monospace;
     font-size: 15px;
     font-size: 0.9375rem;
     line-height: 1.6;
@@ -430,7 +433,6 @@ code,
 kbd,
 tt,
 var {
-    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
     font-size: 15px;
     font-size: 0.9375rem;
 }
@@ -791,7 +793,7 @@ a:active {
 
 .post,
 .page {
-    margin: 0 0 1.5em;
+    margin: 0;
 }
 
 .updated:not(.published) {
@@ -939,5 +941,5 @@ object {
 @import "./components/main_navigation";
 @import "./components/sub_navigation";
 @import "./components/header_social_buttons";
-
+@import "./components/page_footer";
 
