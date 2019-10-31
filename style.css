@@ -803,7 +803,7 @@ a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 0;
 }
 
 .page-links {
@@ -5122,7 +5122,7 @@ object {
 }
 .main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu li a:hover {
   color: white;
-  background-color: green;
+  background-color: #048031;
 }
 .main-navigation .main-navigation-body ul.menu li.menu-item.current-menu-item a {
   color: back;
@@ -5140,7 +5140,7 @@ object {
 }
 
 .sub-navigation {
-  background-color: green;
+  background-color: #048031;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75) inset;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75) inset;
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75) inset;
