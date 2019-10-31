@@ -55,6 +55,11 @@
 								<?php endif; ?>
 								
 								<?php } ?>
+
+								<div class='page-banner'>
+									<span class='title'>CÔNG TY CỔ PHẦN VÀ KỸ THUẬT CÔNG NGHIỆP VIỆT NAM</span>
+									<span class='sub'>VIETNAM INDUSTRIAL AND TECHNICAL JOIN STOCK COMPANY</span>
+								</div>
 							</div>
 						</div><!-- .site-branding -->
 					</div>
@@ -77,19 +82,28 @@
 			<nav id="site-navigation" class="main-navigation">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-9">
-							<?php
-							// include('main-menu.php')
-							wp_nav_menu( array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'primary-menu',
-							) );
-							?>
-						</div>
-						<div class="col-md-3">
-							<div class="header-social-buttons">
-								<a href="#" class="btn-social "><i class="fa fa-facebook" aria-hidden="true"></i></a>
-								<a href="#" class="btn-social "><i class="fa fa-google" aria-hidden="true"></i></a>
+						<div class="col-md-12">
+							<div class="main-navigation-body">
+								<?php 
+									if (has_header_image()) {
+										echo '<img src="' . get_header_image() . '" class="page-header-image"/>';
+									} 
+								?>
+								<?php
+								// include('main-menu.php')
+								wp_nav_menu( array(
+									'theme_location' => 'menu-1',
+									'menu_id'        => 'primary-menu',
+								) );
+								?>
+								<div class="header-social-buttons">
+									<a href="#" class="btn-social "><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#" class="btn-social "><i class="fa fa-google" aria-hidden="true"></i></a>
+								</div>
+
+								<div class="page-search">
+									<?php get_search_form(); ?>
+								</div>
 							</div>
 						</div>
 					</div>

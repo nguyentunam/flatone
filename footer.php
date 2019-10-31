@@ -96,7 +96,13 @@
 					<div class="col-md-3">
 						<h3>Thương hiệu</h3>
 						<div class="phone-number">
-							<img src="http://intechvietnam.com/imgs/layout/logoint.jpg" />
+
+								<?php 
+									if (has_header_image()) {
+										echo '<img src="' . get_header_image() . '" class=""/>';
+									} 
+								?>
+							<!-- <img src="http://intechvietnam.com/imgs/layout/logoint.jpg" /> -->
 						</div>
 					</div>
 					<div class="col-md-3">

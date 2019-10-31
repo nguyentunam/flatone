@@ -6,6 +6,28 @@
     padding: 10px 0 5px;
 }
 
+.page-header-image {
+    height: 70px;
+}
+
+.page-banner {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-left: 1px black solid;
+    font-family: serif;
+    .title {
+        color: black;
+        font-size: 19px;
+    }
+    .sub {
+        color: $green;
+        display: block;
+        font-size: 16px;
+    }
+}
+
 .page-language-selector {
     display: block;
     list-style-type: none;

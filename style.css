@@ -4941,6 +4941,28 @@ object {
   padding: 10px 0 5px;
 }
 
+.page-header-image {
+  height: 70px;
+}
+
+.page-banner {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  border-left: 1px black solid;
+  font-family: serif;
+}
+.page-banner .title {
+  color: black;
+  font-size: 19px;
+}
+.page-banner .sub {
+  color: #048031;
+  display: block;
+  font-size: 16px;
+}
+
 .page-language-selector {
   display: block;
   list-style-type: none;
@@ -5007,42 +5029,63 @@ object {
 #top-nav.fixed .header-social-buttons {
   display: none;
 }
+#top-nav.fixed .main-navigation-body .page-header-image {
+  display: block;
+}
+#top-nav.fixed .main-navigation-body .page-search {
+  display: block;
+}
 
 .main-navigation {
   display: block;
   font-size: 14px;
   z-index: 100;
 }
-.main-navigation ul {
+.main-navigation .container > .row {
+  position: relative;
+}
+.main-navigation .main-navigation-body {
+  display: flex;
+}
+.main-navigation .main-navigation-body .page-header-image {
+  height: 45px;
+  padding-right: 5px;
+  display: none;
+}
+.main-navigation .main-navigation-body .page-search {
+  display: none;
+  width: 120px;
+}
+.main-navigation .main-navigation-body ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-.main-navigation .container > .row {
-  position: relative;
+.main-navigation .main-navigation-body > .menu-main-container {
+  flex: 1;
 }
-.main-navigation ul.menu {
+.main-navigation .main-navigation-body ul.menu {
   display: block;
   z-index: 100;
 }
-.main-navigation ul.menu li.menu-item {
+.main-navigation .main-navigation-body ul.menu li.menu-item {
   display: inline-block;
   margin: 0;
   padding: 0;
   clear: both;
   z-index: 100;
 }
-.main-navigation ul.menu li.menu-item a {
+.main-navigation .main-navigation-body ul.menu li.menu-item a {
   padding: 15px 10px;
   color: #666;
   text-decoration: none;
   display: block;
   z-index: 100;
 }
-.main-navigation ul.menu li.menu-item.current_page_item > a, .main-navigation ul.menu li.menu-item.current_page_parent > a {
+.main-navigation .main-navigation-body ul.menu li.menu-item.current_page_item > a, .main-navigation .main-navigation-body ul.menu li.menu-item.current_page_parent > a {
   color: #393939;
 }
-.main-navigation ul.menu li.menu-item ul.sub-menu {
+.main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu {
   display: flex;
   visibility: hidden;
   opacity: 0;
@@ -5057,17 +5100,17 @@ object {
   background-color: #f5f5f5;
   clear: both;
 }
-.main-navigation ul.menu li.menu-item ul.sub-menu li {
+.main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu li {
   display: inline-block;
   width: 25%;
 }
-.main-navigation ul.menu li.menu-item ul.sub-menu li a {
+.main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu li a {
   display: block;
   overflow: hidden;
   position: relative;
   padding: 6px;
 }
-.main-navigation ul.menu li.menu-item ul.sub-menu li a:before {
+.main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu li a:before {
   content: "";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -5077,20 +5120,20 @@ object {
   -moz-osx-font-smoothing: grayscale;
   padding: 0 5px 0 2px;
 }
-.main-navigation ul.menu li.menu-item ul.sub-menu li a:hover {
+.main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu li a:hover {
   color: white;
   background-color: green;
 }
-.main-navigation ul.menu li.menu-item.current-menu-item a {
+.main-navigation .main-navigation-body ul.menu li.menu-item.current-menu-item a {
   color: back;
   transition: background-color 200ms;
 }
-.main-navigation ul.menu li.menu-item:hover ul.sub-menu {
+.main-navigation .main-navigation-body ul.menu li.menu-item:hover ul.sub-menu {
   visibility: visible;
   opacity: 1;
   transition: visibility 100ms linear 100ms, opacity 100ms;
 }
-.main-navigation ul.menu li.menu-item:hover > a {
+.main-navigation .main-navigation-body ul.menu li.menu-item:hover > a {
   color: back;
   background-color: #e8e8e8;
   transition: background-color 100ms;
