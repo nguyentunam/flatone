@@ -5321,4 +5321,39 @@ object {
   vertical-align: middle;
 }
 
+.panel-category {
+  list-style: none;
+  padding: 0 0 20px;
+  margin: 0;
+}
+.panel-category li.cat-item {
+  background-color: #f2efeb;
+}
+.panel-category li.cat-item a {
+  text-decoration: none;
+  color: black;
+  padding: 7px 21px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.panel-category li.cat-item a:after {
+  content: "";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 10px 8px 0 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.panel-category li.cat-item.current-cat {
+  background-color: #048031;
+}
+.panel-category li.cat-item.current-cat a {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
