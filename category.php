@@ -17,19 +17,25 @@ get_header();
 
 			<?php
 				$category = get_queried_object();
-				$pages = get_pages(array(
+				$pages = get_posts([
+					'post_type' => 'page',
 					'meta_query' => array(
-						array(
-							'key' => 'show_on_category', 
-							'value' => $category->term_id, 
-							'compare' => 'LIKE'
-						)
-					)
-				));
+						[
+							'key' => 'show_on_category',
+							'value' => $category->term_id,
+							'compare' 	=> 'LIKE'
+						]
+					),
+					'post_status' => 'publish',
+				]);
 				if (sizeof($pages) > 0) {
+					$temp = $post;
 					foreach ($pages as $post) {
+						// var_dump($post);
+						// echo "<hr/>";
 						get_template_part( 'template-parts/content', 'page' );
 					}
+					$post = $temp;
 				}
 			?>
 			<div class="container">
@@ -56,25 +62,38 @@ get_header();
 						</ul>
 					</div>
 					<div class="col-md-8">
-						<?php 
-						
-
-							/* Start the Loop */
-							while ( have_posts() ) :
-								the_post();
-
-								/*
-								* Include the Post-Type-specific template for the content.
-								* If you want to override this in a child theme, then include a file
-								* called content-___.php (where ___ is the Post Type name) and that will be used instead.
-								*/
-								get_template_part( 'template-parts/content', 'category' );
-
-							endwhile;
-
-							the_posts_navigation();
-						
+						<?php
+							if (sizeof($pages) > 0) {
+								foreach ($pages as $post) {
+									the_field('description');
+								}
+							}
 						?>
+
+						<div class='row'>
+								<?php 
+									$count = 0;
+									/* Start the Loop */
+									while ( have_posts() ) :
+										$count++;
+										the_post();
+
+										/*
+										* Include the Post-Type-specific template for the content.
+										* If you want to override this in a child theme, then include a file
+										* called content-___.php (where ___ is the Post Type name) and that will be used instead.
+										*/
+										get_template_part( 'template-parts/content', 'category' );
+
+										if ($count % 3 === 0) {
+											echo '<div class="row"></div>';
+										}
+									endwhile;
+
+									the_posts_navigation();
+								
+								?>
+						</div>
 					</div>
 				</div>
 			</div>

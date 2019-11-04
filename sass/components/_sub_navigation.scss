@@ -37,6 +37,7 @@
                 text-decoration: none;
                 display: block;
             }
+            &.current-post-parent,
             &.current_page_item.menu-item-has-children,
             &.current_page_parent {
                 & > a {
@@ -46,6 +47,7 @@
                     background-color: transparent;
                 }
             }
+            &.current-post-parent,
             &.current_page_item,
             &.current_page_parent {
                 display: flex;
@@ -67,6 +69,7 @@
                             position: relative;
                             padding: 11px;
                         }
+                        &.current-menu-parent,
                         &.current-menu-item {
                             & > a {
                                 color: white;

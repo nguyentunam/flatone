@@ -6,6 +6,12 @@
     li.cat-item {
         background-color: #f2efeb;
 
+        border-bottom: 1px solid #d7d7d7;
+
+        &:last-child {
+            border: 0;
+        }
+
         a {
             text-decoration: none;
             color: black;
