@@ -23,6 +23,116 @@ html {
     /* 2 */
 }
 
+
+.flatone-slider {
+	// >:before {
+	// 	content: 'slider';
+	// }
+	
+	> .wraper {
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+		background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,204,1)));
+		background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+		background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+		background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+		background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=1 );
+	    // border-radius: 20px;
+		padding: 20px;
+		overflow: hidden;
+	}
+	.slider-pro {
+		box-sizing: content-box ;
+		.sp-thumbnail-container {
+			// border-bottom: solid 2px gray;
+			.sp-thumbnail {
+				display: block;
+				right: 0;
+				text-align: center;	
+				border-bottom: 1px solid #f2f2f2;
+				position: absolute;
+				left: 25px;
+				bottom:0;
+				top: 0;
+				p {
+					margin:  0px;
+				}
+				.sp-thumbnail-text{
+					padding-top: 18px;
+					a {
+						color: inherit;
+						&:hover {
+							color: $green;
+						}
+					}
+				}
+			}
+				
+			&:first-child {
+				.sp-thumbnail {
+					border-top: 1px solid #f2f2f2;
+				}
+			}
+		}
+		.sp-selected-thumbnail {
+			&:before {
+				border-left-color: transparent;
+			}
+			&:after {
+			    content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				left: 12.5px;
+				top: 50%;
+				margin-top: -8px;
+				border-right:0;
+				border-left: 13px solid #5e5e5e;
+				border-top: 8px solid transparent;
+				border-bottom: 8px solid transparent;
+			}
+		}
+	}
+	
+	.flipster-3d {
+		p,
+		a {
+			color: black !important;
+			text-decoration: none;
+		}
+		div.item {
+			width: 500px;
+			height: 300px;
+			background-color: gray;
+			position: relative;
+			border: 2px solid #dadada;
+			border-radius: 3px;
+			.description {
+				background-color: white;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 50%;
+				padding: 10px;
+			}
+			.image {
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				width: 50%;
+				  background: url(images/bg.jpg) no-repeat center center; 
+				  -webkit-background-size: cover;
+				  -moz-background-size: cover;
+				  -o-background-size: cover;
+				  background-size: cover;
+			}
+		}
+	}
+}
+
 /* Sections
 	 ========================================================================== */
 

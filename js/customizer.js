@@ -48,4 +48,6 @@
 			$('#top-nav').removeClass('fixed');
 		}
 	});
+	
+	
 } )( jQuery );

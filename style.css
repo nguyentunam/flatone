@@ -62,6 +62,97 @@ html {
   /* 2 */
 }
 
+.flatone-slider > .wraper {
+  background: white;
+  background: -moz-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, white), color-stop(47%, #f6f6f6), color-stop(100%, #cccccc));
+  background: -webkit-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
+  background: -o-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
+  background: -ms-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
+  background: linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#cccccc", GradientType=1 );
+  padding: 20px;
+  overflow: hidden;
+}
+.flatone-slider .slider-pro {
+  box-sizing: content-box;
+}
+.flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail {
+  display: block;
+  right: 0;
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  top: 0;
+}
+.flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail p {
+  margin: 0px;
+}
+.flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail .sp-thumbnail-text {
+  padding-top: 18px;
+}
+.flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail .sp-thumbnail-text a {
+  color: inherit;
+}
+.flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail .sp-thumbnail-text a:hover {
+  color: #048031;
+}
+.flatone-slider .slider-pro .sp-thumbnail-container:first-child .sp-thumbnail {
+  border-top: 1px solid #f2f2f2;
+}
+.flatone-slider .slider-pro .sp-selected-thumbnail:before {
+  border-left-color: transparent;
+}
+.flatone-slider .slider-pro .sp-selected-thumbnail:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 12.5px;
+  top: 50%;
+  margin-top: -8px;
+  border-right: 0;
+  border-left: 13px solid #5e5e5e;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.flatone-slider .flipster-3d p,
+.flatone-slider .flipster-3d a {
+  color: black !important;
+  text-decoration: none;
+}
+.flatone-slider .flipster-3d div.item {
+  width: 500px;
+  height: 300px;
+  background-color: gray;
+  position: relative;
+  border: 2px solid #dadada;
+  border-radius: 3px;
+}
+.flatone-slider .flipster-3d div.item .description {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  padding: 10px;
+}
+.flatone-slider .flipster-3d div.item .image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: url(images/bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Sections
 	 ========================================================================== */
 /**
