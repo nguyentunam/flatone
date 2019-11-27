@@ -143,10 +143,10 @@ function flatone_scripts() {
 	wp_enqueue_script('jQuery');
 	
 	
-	wp_enqueue_script( 'flatone-content-slider-pro', get_template_directory_uri() . '/libs/content-slider-pro/dist/js/jquery.sliderPro.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'flatone-content-slider-pro', get_template_directory_uri() . '/libs/content-slider-pro/dist/js/jquery.sliderPro.min.js', array(), '20151215', false );
 	wp_enqueue_style( 'flatone-content-slider-pro-style', get_template_directory_uri() . '/libs/content-slider-pro/dist/css/slider-pro.min.css');
 	
-	wp_enqueue_script( 'flatone-jquery-flipster', get_template_directory_uri() . '/libs/jquery-flipster/dist/jquery.flipster.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'flatone-jquery-flipster', get_template_directory_uri() . '/libs/jquery-flipster/dist/jquery.flipster.min.js', array(), '20151215', false );
 	wp_enqueue_style( 'flatone-jquery-flipster-style', get_template_directory_uri() . '/libs/jquery-flipster/dist/jquery.flipster.min.css');
 	
 	// wp_enqueue_style('font-awesome-47', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
