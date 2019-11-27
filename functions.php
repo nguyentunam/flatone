@@ -139,7 +139,7 @@ function get_stylesheet_uri_dev() {
  */
 function flatone_scripts() {
 
-	wp_register_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', null, null, true );
+	wp_register_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', null, null, false );
 	wp_enqueue_script('jQuery');
 	
 	
@@ -165,6 +165,11 @@ function flatone_scripts() {
 	wp_enqueue_style( 'flatone-style', get_stylesheet_uri_dev() );
 }
 add_action( 'wp_enqueue_scripts', 'flatone_scripts' );
+
+
+// add_action('elementor/editor/before_enqueue_scripts', function () {
+// 	flatone_scripts();
+// });
 
 
 function flatone_content_slider_pro()
