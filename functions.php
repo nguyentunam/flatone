@@ -139,14 +139,14 @@ function get_stylesheet_uri_dev() {
  */
 function flatone_scripts() {
 
-	wp_register_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', null, null, false );
+	wp_register_script( 'jQuery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js', null, null, true );
 	wp_enqueue_script('jQuery');
 	
 	
-	wp_enqueue_script( 'flatone-content-slider-pro', get_template_directory_uri() . '/libs/content-slider-pro/dist/js/jquery.sliderPro.min.js', array(), '20151215', false );
+	wp_enqueue_script( 'flatone-content-slider-pro', get_template_directory_uri() . '/libs/content-slider-pro/dist/js/jquery.sliderPro.min.js', array(), '20151215', true );
 	wp_enqueue_style( 'flatone-content-slider-pro-style', get_template_directory_uri() . '/libs/content-slider-pro/dist/css/slider-pro.min.css');
 	
-	wp_enqueue_script( 'flatone-jquery-flipster', get_template_directory_uri() . '/libs/jquery-flipster/dist/jquery.flipster.min.js', array(), '20151215', false );
+	wp_enqueue_script( 'flatone-jquery-flipster', get_template_directory_uri() . '/libs/jquery-flipster/dist/jquery.flipster.min.js', array(), '20151215', true );
 	wp_enqueue_style( 'flatone-jquery-flipster-style', get_template_directory_uri() . '/libs/jquery-flipster/dist/jquery.flipster.min.css');
 	
 	// wp_enqueue_style('font-awesome-47', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
@@ -221,7 +221,7 @@ function flatone_content_slider_pro()
 	    	$html .= '</div>';
 	    	$html .= '</div>';
 	    	
-	    	$html .= '<script>jQuery(document).ready(function () { jQuery("#flatone-slider-' . $unique . ' .slider-pro").sliderPro({ width: 844, height: 380, orientation: "vertical", loop: false, arrows: true, buttons: false, thumbnailsPosition: "right", thumbnailPointer: true, thumbnailWidth: 290, breakpoints: { 800: { thumbnailsPosition: "bottom", thumbnailWidth: 270, thumbnailHeight: 100 }, 500: { thumbnailsPosition: "bottom", thumbnailWidth: 120, thumbnailHeight: 50 } } }); });</script>';
+	    	// $html .= '<script>jQuery(document).ready(function () { jQuery("#flatone-slider-' . $unique . ' .slider-pro").sliderPro({ width: 844, height: 380, orientation: "vertical", loop: false, arrows: true, buttons: false, thumbnailsPosition: "right", thumbnailPointer: true, thumbnailWidth: 290, breakpoints: { 800: { thumbnailsPosition: "bottom", thumbnailWidth: 270, thumbnailHeight: 100 }, 500: { thumbnailsPosition: "bottom", thumbnailWidth: 120, thumbnailHeight: 50 } } }); });</script>';
     	} else if ($atts['type'] == '3d') {
     		$html .= '<div class="flipster-3d">';
     		$html .= '<ul>';
@@ -238,7 +238,7 @@ function flatone_content_slider_pro()
     		$html .= '</ul>';
     		$html .= '</div>';
     		
-    		$html .= '<script>jQuery(document).ready(function () { jQuery("#flatone-slider-' . $unique . ' .flipster-3d").flipster({ style: "carousel", spacing: -0.5, nav: false, loop: true, buttons: true, }); });</script>';
+    		// $html .= '<script>jQuery(document).ready(function () { jQuery("#flatone-slider-' . $unique . ' .flipster-3d").flipster({ style: "carousel", spacing: -0.5, nav: false, loop: true, buttons: true, }); });</script>';
     	}
     	
     	$html .= '</div>';

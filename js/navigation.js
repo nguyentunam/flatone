@@ -127,34 +127,34 @@
 
 $(document).ready(function () {
 	
-	// $( '.slider-pro' ).sliderPro({
-	// 		width: 844,
-	// 		height: 380,
-	// 		orientation: 'vertical',
-	// 		loop: false,
-	// 		arrows: true,
-	// 		buttons: false,
-	// 		thumbnailsPosition: 'right',
-	// 		thumbnailPointer: true,
-	// 		thumbnailWidth: 290,
-	// 		breakpoints: {
-	// 			800: {
-	// 				thumbnailsPosition: 'bottom',
-	// 				thumbnailWidth: 270,
-	// 				thumbnailHeight: 100
-	// 			},
-	// 			500: {
-	// 				thumbnailsPosition: 'bottom',
-	// 				thumbnailWidth: 120,
-	// 				thumbnailHeight: 50
-	// 			}
-	// 		}
-	// 	});
-	// $('.flipster-3d').flipster({
-	//     style: 'carousel',
-	//     spacing: -0.5,
-	//     nav: false,
-	//     loop: true,
-	//     buttons: true,
-	// });
+	$( '.slider-pro' ).sliderPro({
+			width: 844,
+			height: 380,
+			orientation: 'vertical',
+			loop: false,
+			arrows: true,
+			buttons: false,
+			thumbnailsPosition: 'right',
+			thumbnailPointer: true,
+			thumbnailWidth: 290,
+			breakpoints: {
+				800: {
+					thumbnailsPosition: 'bottom',
+					thumbnailWidth: 270,
+					thumbnailHeight: 100
+				},
+				500: {
+					thumbnailsPosition: 'bottom',
+					thumbnailWidth: 120,
+					thumbnailHeight: 50
+				}
+			}
+		});
+	$('.flipster-3d').flipster({
+	    style: 'carousel',
+	    spacing: -0.5,
+	    nav: false,
+	    loop: true,
+	    buttons: true,
+	});
 });
