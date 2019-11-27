@@ -63,14 +63,7 @@ html {
 }
 
 .flatone-slider > .wraper {
-  background: white;
-  background: -moz-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, white), color-stop(47%, #f6f6f6), color-stop(100%, #cccccc));
-  background: -webkit-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
-  background: -o-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
-  background: -ms-linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
-  background: linear-gradient(45deg, white 0%, #f6f6f6 47%, #cccccc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#cccccc", GradientType=1 );
+  background: #f2f2f2;
   padding: 20px;
   overflow: hidden;
 }
@@ -81,7 +74,7 @@ html {
   display: block;
   right: 0;
   text-align: center;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid white;
   position: absolute;
   left: 25px;
   bottom: 0;
@@ -95,12 +88,10 @@ html {
 }
 .flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail .sp-thumbnail-text a {
   color: inherit;
-}
-.flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail .sp-thumbnail-text a:hover {
   color: #048031;
 }
 .flatone-slider .slider-pro .sp-thumbnail-container:first-child .sp-thumbnail {
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid white;
 }
 .flatone-slider .slider-pro .sp-selected-thumbnail:before {
   border-left-color: transparent;
@@ -120,7 +111,7 @@ html {
 }
 .flatone-slider .flipster-3d p,
 .flatone-slider .flipster-3d a {
-  color: black !important;
+  color: white !important;
   text-decoration: none;
 }
 .flatone-slider .flipster-3d div.item {
@@ -134,18 +125,18 @@ html {
 .flatone-slider .flipster-3d div.item .description {
   background-color: white;
   position: absolute;
-  left: 0;
-  top: 0;
+  right: 0;
   bottom: 0;
-  width: 50%;
+  left: 0;
   padding: 10px;
+  background-color: rgba(1, 1, 1, 0.62);
 }
 .flatone-slider .flipster-3d div.item .image {
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  width: 50%;
+  left: 0;
   background: url(images/bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

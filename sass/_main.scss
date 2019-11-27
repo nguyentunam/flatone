@@ -30,14 +30,7 @@ html {
 	// }
 	
 	> .wraper {
-		background: rgba(255,255,255,1);
-		background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
-		background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,204,1)));
-		background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
-		background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
-		background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
-		background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,204,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=1 );
+		background: #f2f2f2;
 	    // border-radius: 20px;
 		padding: 20px;
 		overflow: hidden;
@@ -50,7 +43,7 @@ html {
 				display: block;
 				right: 0;
 				text-align: center;	
-				border-bottom: 1px solid #f2f2f2;
+				border-bottom: 1px solid white;
 				position: absolute;
 				left: 25px;
 				bottom:0;
@@ -62,8 +55,8 @@ html {
 					padding-top: 18px;
 					a {
 						color: inherit;
-						&:hover {
 							color: $green;
+						&:hover {
 						}
 					}
 				}
@@ -71,7 +64,7 @@ html {
 				
 			&:first-child {
 				.sp-thumbnail {
-					border-top: 1px solid #f2f2f2;
+					border-top: 1px solid white;
 				}
 			}
 		}
@@ -98,9 +91,16 @@ html {
 	.flipster-3d {
 		p,
 		a {
-			color: black !important;
+			color: white !important;
 			text-decoration: none;
 		}
+		
+		
+		// .flipster__item--current {
+		// 	-webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+		// 	-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+		// 	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+		// }
 		div.item {
 			width: 500px;
 			height: 300px;
@@ -111,18 +111,18 @@ html {
 			.description {
 				background-color: white;
 				position: absolute;
-				left: 0;
-				top: 0;
+				right: 0;
 				bottom: 0;
-				width: 50%;
+				left: 0;
 				padding: 10px;
+				background-color: rgba(1, 1, 1, 0.62);
 			}
 			.image {
 				position: absolute;
 				right: 0;
 				top: 0;
 				bottom: 0;
-				width: 50%;
+				left: 0;
 				  background: url(images/bg.jpg) no-repeat center center; 
 				  -webkit-background-size: cover;
 				  -moz-background-size: cover;
