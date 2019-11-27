@@ -87,7 +87,6 @@ html {
   padding-top: 18px;
 }
 .flatone-slider .slider-pro .sp-thumbnail-container .sp-thumbnail .sp-thumbnail-text a {
-  color: inherit;
   color: #048031;
 }
 .flatone-slider .slider-pro .sp-thumbnail-container:first-child .sp-thumbnail {
@@ -119,8 +118,11 @@ html {
   height: 300px;
   background-color: gray;
   position: relative;
-  border: 2px solid #dadada;
+  border: 3px solid #dadada;
   border-radius: 3px;
+}
+.flatone-slider .flipster-3d div.item:hover {
+  border: 3px solid #048031;
 }
 .flatone-slider .flipster-3d div.item .description {
   background-color: white;
