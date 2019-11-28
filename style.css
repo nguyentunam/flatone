@@ -5452,4 +5452,31 @@ object {
   color: white;
 }
 
+.flatone_category_list .image-wraper {
+  padding: 5px;
+  position: relative;
+  border: 1px solid #c9c9c9;
+}
+.flatone_category_list .image-wraper .image {
+  background: url(images/bg.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  height: 200px;
+}
+.flatone_category_list .title {
+  padding: 10px 0 15px;
+  font-weight: bold;
+  display: block;
+}
+.flatone_category_list a {
+  color: #393a3f;
+  text-decoration: none;
+}
+.flatone_category_list a:hover .title {
+  color: green !important;
+}
+
 /*# sourceMappingURL=style.css.map */

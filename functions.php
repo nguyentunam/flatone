@@ -245,6 +245,39 @@ function flatone_content_slider_pro()
     	
         return $html;
     }
+    
+    function flatone_category_menu($atts = [], $content = null) {
+		$html = wp_list_categories([
+			'echo' => false,
+			'depth' => 1,
+			'title_li' => ''
+		]);
+		return '<ul class="panel-category"> ' . $html . ' </ul>';
+    }
+    
+    function flatone_category_list($atts = [], $content = null) {
+		$terms = get_categories();
+		
+		// Check if any term exists
+		if ( ! empty( $terms ) && is_array( $terms ) ) {
+		    // Run a loop and print them all
+		    foreach ( $terms as $term ) {
+		    	$image_id .= get_field('image', 'category_' . $term->term_id);
+		    	
+		    	$html .= '<div class="item col-md-4">';
+		    	$html .= '<a class="" href=" ' . esc_url( get_term_link( $term ) ) . '">';
+		    	
+		    	$html .= '<div class="image-wraper">' . '<div class="image" style="background-image:url(' . wp_get_attachment_url($image_id) . ')"></div>' . '</div>';
+		    	$html .= '<span class="title">' . $term->cat_name . '</span>';
+		    	$html .= '</a>';
+		    	$html .= '</div>';
+		    }
+		} 
+		return '<div class="flatone_category_list row"> ' . $html . ' </div>';
+    }
+    
+    add_shortcode('flatone_category_menu', 'flatone_category_menu');
+    add_shortcode('flatone_category_list', 'flatone_category_list');
     add_shortcode('flatone_slider', 'flatone_content_slider_pro_shortcode');
 }
 add_action('init', 'flatone_content_slider_pro');

@@ -1,0 +1,36 @@
+.flatone_category_list {
+	.image-wraper {
+		padding: 5px;
+		position: relative;
+		border: 1px solid #c9c9c9;
+		.image {
+			background: url(images/bg.jpg) no-repeat center center; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			display: block;
+			height: 200px;
+		}
+	}
+	.title {
+		padding: 10px 0 15px;
+		font-weight: bold;
+		display: block;
+	}
+	
+	// a {color: $gray;}         /* Unvisited link  */
+	// a:visited {color: $gray;} /* Visited link    */
+	// a:hover {color:$gray;}   /* Mouse over link */
+	// a:active {color:$gray;}  /* Selected link   */
+	a {
+		
+		color: #393a3f;
+		text-decoration: none;
+		&:hover {
+			.title {
+				color: green !important;
+			}
+		}
+	}
+}
