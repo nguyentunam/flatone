@@ -54,10 +54,15 @@
 
                 ul.sub-menu {
                     // top: ;
+					&::-webkit-scrollbar { 
+						display: none;  /* Chrome Safari */
+					}
+					scrollbar-width: none; /* Firefox */
+					-ms-overflow-style: none;  /* IE 10+ */
                     padding: 0;
                     display: inline-block;
                     font-size: 13px;
-                    overflow: hidden;
+                    overflow: auto;
                     flex: 1;
                     display: flex;
                     li {
@@ -67,7 +72,8 @@
                             display: block;
                             overflow: hidden;
                             position: relative;
-                            padding: 11px;
+                            padding: 11px 20px;
+                            white-space:nowrap;
                         }
                         &.current-menu-parent,
                         &.current-menu-item {

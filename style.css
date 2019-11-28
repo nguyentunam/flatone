@@ -5271,12 +5271,20 @@ object {
   display: flex;
 }
 .sub-navigation ul.menu li.menu-item.current-post-parent ul.sub-menu, .sub-navigation ul.menu li.menu-item.current_page_item ul.sub-menu, .sub-navigation ul.menu li.menu-item.current_page_parent ul.sub-menu {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
   padding: 0;
   display: inline-block;
   font-size: 13px;
-  overflow: hidden;
+  overflow: auto;
   flex: 1;
   display: flex;
+}
+.sub-navigation ul.menu li.menu-item.current-post-parent ul.sub-menu::-webkit-scrollbar, .sub-navigation ul.menu li.menu-item.current_page_item ul.sub-menu::-webkit-scrollbar, .sub-navigation ul.menu li.menu-item.current_page_parent ul.sub-menu::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
 }
 .sub-navigation ul.menu li.menu-item.current-post-parent ul.sub-menu li, .sub-navigation ul.menu li.menu-item.current_page_item ul.sub-menu li, .sub-navigation ul.menu li.menu-item.current_page_parent ul.sub-menu li {
   display: block;
@@ -5285,7 +5293,8 @@ object {
   display: block;
   overflow: hidden;
   position: relative;
-  padding: 11px;
+  padding: 11px 20px;
+  white-space: nowrap;
 }
 .sub-navigation ul.menu li.menu-item.current-post-parent ul.sub-menu li.current-menu-parent > a, .sub-navigation ul.menu li.menu-item.current-post-parent ul.sub-menu li.current-menu-item > a, .sub-navigation ul.menu li.menu-item.current_page_item ul.sub-menu li.current-menu-parent > a, .sub-navigation ul.menu li.menu-item.current_page_item ul.sub-menu li.current-menu-item > a, .sub-navigation ul.menu li.menu-item.current_page_parent ul.sub-menu li.current-menu-parent > a, .sub-navigation ul.menu li.menu-item.current_page_parent ul.sub-menu li.current-menu-item > a {
   color: white;

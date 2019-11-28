@@ -157,4 +157,41 @@ $(document).ready(function () {
 	    loop: true,
 	    buttons: true,
 	});
+	
+	
+/*animate*/
+
+     $('.sub-navigation .sub-menu').each(function () {
+     	var width = 0;
+     	var $this = $(this);
+     	$this.children().each(function () {
+     		width += $(this).width();
+     	});
+     	width = width - $this.width();
+     	if (width > 30) {
+	     	var duration =  width * 10;
+	     	var nextOffset = width;
+			var gogo = function () {
+				$this.animate({scrollLeft: nextOffset}, {
+					queue: false,
+					duration: duration, 
+					easing: "linear", 
+					complete: function(){
+					  //$('.scroll-group').css({top:0});
+					  console.log('done');
+					  nextOffset = nextOffset > 0 ? 0 : width;
+					  gogo();
+					}
+				});
+			}
+			$this.hover(function() { //mouseenter
+				$this.stop(true, false);
+			});
+			$this.mouseleave(function(){
+			    gogo();
+			});
+			gogo();
+     	}
+	     
+     });
 });
