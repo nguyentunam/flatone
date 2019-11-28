@@ -84,7 +84,6 @@
                 }
                 ul.sub-menu {
                     // top: ;
-                    display: flex;
                     visibility: hidden;
                     opacity: 0;
                     transition: visibility $delay1 linear $delay1, opacity $delay1;
@@ -101,7 +100,7 @@
     
                     li {
                         display: inline-block;
-                        width: 25%;
+                        width: 23%;
                         a {
                             display: block;
                             overflow: hidden;

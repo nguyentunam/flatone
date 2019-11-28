@@ -5170,7 +5170,6 @@ object {
   color: #393939;
 }
 .main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu {
-  display: flex;
   visibility: hidden;
   opacity: 0;
   transition: visibility 200ms linear 200ms, opacity 200ms;
@@ -5186,7 +5185,7 @@ object {
 }
 .main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu li {
   display: inline-block;
-  width: 25%;
+  width: 23%;
 }
 .main-navigation .main-navigation-body ul.menu li.menu-item ul.sub-menu li a {
   display: block;
