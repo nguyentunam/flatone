@@ -57,8 +57,8 @@
 								<?php } ?>
 
 								<div class='page-banner'>
-									<span class='title'>CÔNG TY CỔ PHẦN VÀ KỸ THUẬT CÔNG NGHIỆP VIỆT NAM</span>
-									<span class='sub'>VIETNAM INDUSTRIAL AND TECHNICAL JOIN STOCK COMPANY</span>
+									<span class='title'>CÔNG TY CỔ PHẦN KỸ THUẬT VÀ THƯƠNG MẠI HOÀNG MINH GROUP</span>
+									<span class='sub'>VIETNAM TECHNICAL AND ECHONOMIC JOIN STOCK COMPANY</span>
 								</div>
 							</div>
 						</div><!-- .site-branding -->
