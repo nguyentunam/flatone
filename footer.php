@@ -42,21 +42,21 @@
                             <span class='value'>info@bangtaihoangminh.com</span>                   
 						</div>
 						<div class="info">
-							<span class="fa fa-map-marker"></span>
+							<!--span class="fa fa-map-marker"></span>
                             <span class='label'>Vị trí:</span> 
-                            <span class='value'><a href="#">Xem bản đồ</a></span>                   
+                            <span class='value'><a href="#">Xem bản đồ</a></span-->                   
 						</div>
 					</div>
 					<div class="col-md-4">
-						<h3>Chi nhánh TP.Cần Thơ</h3>
+						<h3>Chi nhánh Đà Nẵng</h3>
 						<div class="info">
 							<span class="fa fa-home"></span>
-                           21/15 TL 918, P.Bình Thủy, Q.Bình Thủy, TP.Cần Thơ 
+                            Lô 5+6, Khu công nghiệp Lai Xá, Kim Chung, H. Hoài Đức, TP.Hà Nội.                        
 						</div>
 						<div class="info">
 							<span class="fa fa-phone-square"></span>
                             <span class='label'>Điện thoại:</span> 
-                            <span class='value'>0987.836.119</span>                   
+                            <span class='value'>0987654321</span>                   
 						</div>
 						<div class="info">
 							<span class="fa fa-envelope"></span>
@@ -64,21 +64,21 @@
                             <span class='value'>info@bangtaihoangminh.com</span>                   
 						</div>
 						<div class="info">
-							<span class="fa fa-map-marker"></span>
-                            <span class='label'>Vị trí:</span> 
-                            <span class='value'><a href="#">Xem bản đồ</a></span>                   
+							<!--span class="fa fa-map-marker"></span>
+                            <span class='label'>Email:</span> 
+                            <span class='value'><a href="#">Xem bản đồ</a></span-->                   
 						</div>
 					</div>
 					<div class="col-md-4">
-						<h3>Chi nhánh TP.Hà Nội</h3>
+						<h3>Chi nhánh Hồ Chí Minh </h3>
 						<div class="info">
 							<span class="fa fa-home"></span>
-              Lô L2D, Khu tái định cư X2B, Hoàng Mai, Hà Nội.             
+                            Lô 5+6, Khu công nghiệp Lai Xá, Kim Chung, H. Hoài Đức, TP.Hà Nội.                        
 						</div>
 						<div class="info">
 							<span class="fa fa-phone-square"></span>
                             <span class='label'>Điện thoại:</span> 
-                            <span class='value'>0987.836.119</span>                   
+                            <span class='value'>0987654321</span>                   
 						</div>
 						<div class="info">
 							<span class="fa fa-envelope"></span>
@@ -86,9 +86,9 @@
                             <span class='value'>info@bangtaihoangminh.com</span>                   
 						</div>
 						<div class="info">
-							<span class="fa fa-map-marker"></span>
-                            <span class='label'>Vị trí:</span> 
-                            <span class='value'><a href="#">Xem bản đồ</a></span>                   
+							<!--span class="fa fa-map-marker"></span>
+                            <span class='label'>Email:</span> 
+                            <span class='value'><a href="#">Xem bản đồ</a></span-->                   
 						</div>
 					</div>
 				</div>
@@ -133,7 +133,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<span class="icon icon-cc"></span>
-						Copyright © 2017 intechvietnam.com. All Rights Reserved            
+						Copyright © 2017 bangtaicongnghiep.com. All Rights Reserved            
 					</div>
 					<div class="col-md-6">
 						<span class="icon icon-verified"></span>          
@@ -148,3 +148,18 @@
 
 </body>
 </html>
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package flatone
+ */
+
+?>
+
+	</div><!-- #content -->
+

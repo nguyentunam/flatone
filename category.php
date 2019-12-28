@@ -16,9 +16,11 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<?php
+				flatone_category_header();
+				/*
 				$category = get_queried_object();
 				$pages = get_posts([
-					'post_type' => 'page',
+					'post_type' => 'category_header',
 					'meta_query' => array(
 						[
 							'key' => 'show_on_category',
@@ -28,15 +30,17 @@ get_header();
 					),
 					'post_status' => 'publish',
 				]);
+
 				if (sizeof($pages) > 0) {
-					$temp = $post;
-					foreach ($pages as $post) {
-						// var_dump($post);
-						// echo "<hr/>";
-						get_template_part( 'template-parts/content', 'page' );
-					}
+						$temp = $post;
+							foreach ($pages as $post) {
+								$content = $post->post_content;
+								$content = apply_filters('the_content', $content);
+								$content = str_replace(']]>', ']]&gt;', $content);
+								echo $content;
+							}
 					$post = $temp;
-				}
+				} */
 			?>
 			<div class="container">
 				<div class="row">

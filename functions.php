@@ -326,6 +326,33 @@ function flatone_slider_register() {
 add_action( 'init', 'flatone_slider_register' );
 
 
+function flatone_category_header() {
+
+	$category = get_queried_object();
+	$pages = get_posts([
+		'post_type' => 'category_header',
+		'meta_query' => array(
+			[
+				'key' => 'show_on_category',
+				'value' => $category->term_id,
+				'compare' 	=> 'LIKE'
+			]
+		),
+		'post_status' => 'publish',
+	]);
+
+	if (sizeof($pages) > 0) {
+			$temp = $post;
+				foreach ($pages as $post) {
+					$content = $post->post_content;
+					$content = apply_filters('the_content', $content);
+					$content = str_replace(']]>', ']]&gt;', $content);
+					echo $content;
+				}
+			$post = $temp;
+	}
+}
+
 /**
  * Implement the Custom Header feature.
  */
