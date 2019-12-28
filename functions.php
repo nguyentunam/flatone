@@ -327,19 +327,31 @@ add_action( 'init', 'flatone_slider_register' );
 
 
 function flatone_category_header() {
-
 	$category = get_queried_object();
-	$pages = get_posts([
-		'post_type' => 'category_header',
-		'meta_query' => array(
-			[
-				'key' => 'show_on_category',
-				'value' => $category->term_id,
-				'compare' 	=> 'LIKE'
-			]
-		),
-		'post_status' => 'publish',
-	]);
+	$term_id = null;
+	if (isset($category->term_id)) {
+		$term_id = $category->term_id;
+	} else {
+		//$category = get_the_category();
+		//$term_id = $category->term_id;
+		$categories = wp_get_post_categories(get_the_ID()); 
+		if (!empty($categories)) {
+			$term_id = $categories[0];
+		}
+	}
+	if (isset($term_id)) {
+		$pages = get_posts([
+			'post_type' => 'category_header',
+			'meta_query' => array(
+				[
+					'key' => 'show_on_category',
+					'value' => $term_id,
+					'compare' 	=> 'LIKE'
+				]
+			),
+			'post_status' => 'publish',
+		]);
+	}
 
 	if (sizeof($pages) > 0) {
 			//$temp = $post;
