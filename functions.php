@@ -331,6 +331,7 @@ add_action( 'init', 'flatone_slider_register' );
 function flatone_category_header() {
 	$category = get_queried_object();
 	$term_id = null;
+	$pages = [];
 	if (isset($category->term_id)) {
 		$term_id = $category->term_id;
 	} else {
