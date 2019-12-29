@@ -355,7 +355,7 @@ function flatone_category_header() {
 		]);
 	}
 
-	if (sizeof($pages) > 0) {
+	if ($pages && sizeof($pages) > 0) {
 			//$temp = $post;
 				foreach ($pages as $post) {
 //					$content = $post->post_content;
