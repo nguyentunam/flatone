@@ -259,7 +259,7 @@ function flatone_content_slider_pro()
 		$terms = get_categories();
 		
 		$image_id = null;
-		$htmll = '';
+		$html = '';
 		// Check if any term exists
 		if ( ! empty( $terms ) && is_array( $terms ) ) {
 		    // Run a loop and print them all
