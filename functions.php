@@ -232,6 +232,7 @@ function flatone_content_slider_pro()
 	    				$html .= '<div class="image" style="background-image: url(' . wp_get_attachment_url($item['image']) . ')">';
 	    				$html .= '<div class="description">' . $item['description'] . '</div>';
 	    				$html .= '</div>';
+	    				$html .= '</div>';
 	    			$html .= '</a>';
     			$html .= '</li>';
     		}
