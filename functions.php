@@ -227,8 +227,7 @@ function flatone_content_slider_pro()
     		$html .= '<ul>';
     		foreach($items as $item) {
     			$html .= '<li>';
-					var_dump($item['link']);
-	    			$html .= '<a href="' . ($item['link']) . '">';
+	    			$html .= '<a xxx href="' . ($item['link']) . '">';
 	    				$html .= '<div class="item">';
 	    				$html .= '<div class="image" style="background-image: url(' . wp_get_attachment_url($item['image']) . ')">';
 	    				$html .= '<div class="description">' . $item['description'] . '</div>';
