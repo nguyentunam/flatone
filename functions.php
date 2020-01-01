@@ -207,7 +207,7 @@ function flatone_content_slider_pro()
 		    			$thumbnails .= '<div class="sp-thumbnail">';
 		    				// $thumbnails .= '<div class="sp-thumbnail-image-container"> <img class="sp-thumbnail-image" src="http://bqworks.com/slider-pro/images/image10_thumbnail.jpg"/> </div>';
 			    			$thumbnails .= '<div class="sp-thumbnail-text">';
-			    				$thumbnails .= '<div class="sp-thumbnail-description">' . $item['description']  . '<div>'; 
+			    				$thumbnails .= '<div class="sp-thumbnail-description">' . htmlspecialchars($item['description'])  . '<div>'; 
 			    				$thumbnails .= '<a class="sp-thumbnail-title" href="' . ($item['link']) . '"><span class="fa fa-mail-reply-all" aria-hidden="true"></span></a>';
 			    			$thumbnails .= '</div>';
 		    			$thumbnails .= '</div>';
@@ -230,7 +230,7 @@ function flatone_content_slider_pro()
 	    			$html .= '<a xxx href="' . ($item['link']) . '">';
 	    				$html .= '<div class="item">';
 	    				$html .= '<div class="image" style="background-image: url(' . wp_get_attachment_url($item['image']) . ')">';
-	    				$html .= '<div class="description">' . $item['description'] . '</div>';
+	    				$html .= '<div class="description">' . htmlspecialchars($item['description']) . '</div>';
 	    				$html .= '</div>';
 	    				$html .= '</div>';
 	    			$html .= '</a>';
