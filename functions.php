@@ -227,6 +227,7 @@ function flatone_content_slider_pro()
     		$html .= '<ul>';
     		foreach($items as $item) {
     			$html .= '<li>';
+					echo "TEST TEST";
 					var_dump($item);
 	    			$html .= '<a href="' . ($item['link']) . '">';
 	    				$html .= '<div class="item">';
