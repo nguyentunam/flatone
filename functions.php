@@ -368,6 +368,7 @@ function flatone_category_header() {
 				}
 			//$post = $temp;
 	}
+  return $pages;
 }
 
 /**

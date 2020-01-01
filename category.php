@@ -16,7 +16,7 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<?php
-				flatone_category_header();
+				$pages = flatone_category_header();
 				/*
 				$category = get_queried_object();
 				$pages = get_posts([
