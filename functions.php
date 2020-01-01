@@ -201,7 +201,7 @@ function flatone_content_slider_pro()
 		    	$html .= '<div class="sp-slides">';
 		    		foreach($items as $item) {
 		    			$html .= '<div class="sp-slide">'; 
-	    					$html .= '<a xxx href="' . ($item['link']) . '">';
+	    					$html .= '<a yyy href="' . ($item['link']) . '">';
 		    					$html .= '<img class="sp-image" src="' . wp_get_attachment_url($item['image']) . '">';
 							  $html .= '</a>';
 		    			$html .= '</div>';
