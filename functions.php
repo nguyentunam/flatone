@@ -208,7 +208,7 @@ function flatone_content_slider_pro()
 		    				// $thumbnails .= '<div class="sp-thumbnail-image-container"> <img class="sp-thumbnail-image" src="http://bqworks.com/slider-pro/images/image10_thumbnail.jpg"/> </div>';
 			    			$thumbnails .= '<div class="sp-thumbnail-text">';
 			    				$thumbnails .= '<div class="sp-thumbnail-description">' . $item['description']  . '<div>'; 
-			    				$thumbnails .= '<a class="sp-thumbnail-title" href="' . get_permalink($item['link']) . '"><span class="fa fa-mail-reply-all" aria-hidden="true"></span></a>';
+			    				$thumbnails .= '<a class="sp-thumbnail-title" href="' . ($item['link']) . '"><span class="fa fa-mail-reply-all" aria-hidden="true"></span></a>';
 			    			$thumbnails .= '</div>';
 		    			$thumbnails .= '</div>';
 		    		}
@@ -227,7 +227,7 @@ function flatone_content_slider_pro()
     		$html .= '<ul>';
     		foreach($items as $item) {
     			$html .= '<li>';
-	    			$html .= '<a href="' . get_permalink($item['link']) . '">';
+	    			$html .= '<a href="' . ($item['link']) . '">';
 	    				$html .= '<div class="item">';
 	    				$html .= '<div class="image" style="background-image: url(' . wp_get_attachment_url($item['image']) . ')">';
 	    				$html .= '<div class="description">' . $item['description'] . '</div>';
