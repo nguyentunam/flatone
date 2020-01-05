@@ -267,8 +267,7 @@ function flatone_content_slider_pro()
 		if ( ! empty( $terms ) && is_array( $terms ) ) {
 		    // Run a loop and print them all
 		    foreach ( $terms as $term ) {
-		    	$image_id .= get_field('image', 'category_' . $term->term_id);
-					var_dump($image_id);
+		    	$image_id = get_field('image', 'category_' . $term->term_id);
 		    	
 		    	$html .= '<div class="item col-md-4">';
 		    	$html .= '<a class="" href=" ' . esc_url( get_term_link( $term ) ) . '">';
