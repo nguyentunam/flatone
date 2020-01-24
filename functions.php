@@ -409,7 +409,30 @@ function flatone_related_post($post) {
     	while( $related->have_posts() ) { 
 			$related->the_post(); 
 			
-			get_template_part( 'template-parts/content', 'category' );
+			?>
+			
+			
+				<div class='col-md-4'>
+					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<?php flatone_post_thumbnail(); ?>
+						<dev class="title">
+							<?php
+								the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				
+							?>
+						</dev><!-- .entry-header -->
+				
+						<div class="excerpt">
+							<?php 
+								the_excerpt();
+							?>
+						</div>
+				
+					</div><!-- #post-<?php the_ID(); ?> -->
+				</div>
+
+			
+			<?php
       }
       wp_reset_postdata();
 	}
