@@ -395,6 +395,26 @@ function flatone_post_footer() {
   return $pages;
 }
 
+
+function flatone_related_post($post) {
+	$related = new WP_Query(
+		array(
+			'category__in'   => wp_get_post_categories( $post->ID ),
+			'posts_per_page' => 3,
+			'post__not_in'   => array( $post->ID )
+		)
+	);	
+	if( $related->have_posts() ) { 
+		echo '<div class="col-md-12"><div style="text:center; padding:20px 0; font-weight:bold;font-size:2em;">Sản phẩm liên quan</div></div>';
+    	while( $related->have_posts() ) { 
+			$related->the_post(); 
+			
+			get_template_part( 'template-parts/content', 'category' );
+      }
+      wp_reset_postdata();
+	}
+}
+
 /**
  * Implement the Custom Header feature.
  */

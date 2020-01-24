@@ -38,6 +38,13 @@ get_header();
 		?>
 
 		</main><!-- #main -->
+		<div class="container">
+			<div class="row">
+				<?php 
+					flatone_related_post($post); 
+				?>
+			</div>
+		</div>
 		<div>
 			<?php 
 				flatone_post_footer();
