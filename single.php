@@ -38,6 +38,13 @@ get_header();
 		?>
 
 		</main><!-- #main -->
+		<div>
+			<?php 
+				flatone_post_footer();
+			?>
+			
+			
+		</div>
 	</div><!-- #primary -->
 
 <?php

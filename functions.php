@@ -374,6 +374,27 @@ function flatone_category_header() {
   return $pages;
 }
 
+function flatone_post_footer() {
+	$pages = get_posts([
+		'post_type' => 'post_footer',
+		'post_status' => 'publish',
+	]);
+
+	if ($pages && sizeof($pages) > 0) {
+			//$temp = $post;
+				foreach ($pages as $post) {
+//					$content = $post->post_content;
+//					$content = apply_filters('the_content', $content);
+//					$content = str_replace(']]>', ']]&gt;', $content);
+//					echo $content;
+//					var_dump($post);	
+					echo \Elementor\Plugin::$instance->frontend->get_builder_content( $post->ID );
+				}
+			//$post = $temp;
+	}
+  return $pages;
+}
+
 /**
  * Implement the Custom Header feature.
  */
